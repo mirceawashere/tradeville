@@ -24,6 +24,6 @@ def get_market_value():
     quantity = data["data"]["Quantity"][0]
     market_price = data["data"]["MarketPrice"][0]
     total_value = quantity * market_price
-    print(total_value)
+    return total_value
 
-get_market_value()
+
