@@ -11,7 +11,7 @@ So what I did was:
    While I could have made it more complex, I was only honestly interested in the first asset, that’s why I used `[0][0]` + at the end of the day, I wanted a numbered value to populate a cell sheet with.
 2. use that PY script in conjunction with a Flask server running on the free version from [render](https://render.com/) 
    The idea was for my PY script to connect to the Tradeville API and for the Google App Script to extract the value from my own API, running on the Flask server. 
-3. made a JS script and uploaded it in Google App Script that connected to my Flask server
+3. made a [JS script](https://github.com/mirceawashere/tradeville/blob/main/google_script.js) and uploaded it in Google App Script that connected to my Flask server
 
 that’s about it. 
 
@@ -29,5 +29,4 @@ TRADEVILLE_USER= ...
 - **build command**: `pip install -r requirements.txt` - you can get the file/contents from [here](https://github.com/mirceawashere/tradeville/blob/main/requirements.txt) 
 - **start command**: `gunicorn {name of your PY script}:app`
 
-### google app script
 
