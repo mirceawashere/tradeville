@@ -26,4 +26,5 @@ def get_market_value():
     total_value = quantity * market_price
     return total_value
 
-
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
