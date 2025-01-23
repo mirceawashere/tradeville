@@ -37,7 +37,7 @@ def get_market_value():
         total_value = quantity * market_price
 
         # Return JSON response
-        print(total_value)
+        return str(total_value)
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
