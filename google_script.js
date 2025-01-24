@@ -12,7 +12,7 @@ function fetchAPIValueToSheet(sheetId, sheetName) {
   try {
     const response = UrlFetchApp.fetch(url, options);
 
-    const data = parseFloat(response.getContentText());
+    const data = parseFloat(response.getContentText()); // the idea here was that the output of the PY script is a string. So in order to use the info in various computations, I needed to convert the input into a float. 
 
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 
